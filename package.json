@@ -43,8 +43,5 @@
   },
   "dependencies": {
     "dotenv": "^8.0.0"
-  },
-  "np": {
-    "yarn": false
   }
 }
