@@ -1,8 +1,8 @@
 # nodeneeds-npm
-[![Build Status](https://travis-ci.org/chandu1310/node-needs.svg?branch=master)](https://travis-ci.org/chandu1310/node-needs)
 [![npm latest version](https://img.shields.io/npm/v/node-needs/latest.svg)](https://www.npmjs.com/package/node-needs)
-[![Maintainability](https://api.codeclimate.com/v1/badges/8efb6413bf142bb1f68f/maintainability)](https://codeclimate.com/github/chandu1310/node-needs/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/8efb6413bf142bb1f68f/test_coverage)](https://codeclimate.com/github/chandu1310/node-needs/test_coverage)
+[![Build Status](https://travis-ci.org/chandu1310/nodeneeds-npm.svg?branch=master)](https://travis-ci.org/chandu1310/nodeneeds-npm)
+[![Maintainability](https://api.codeclimate.com/v1/badges/726be829a5b79fed192a/maintainability)](https://codeclimate.com/github/chandu1310/nodeneeds-npm/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/726be829a5b79fed192a/test_coverage)](https://codeclimate.com/github/chandu1310/nodeneeds-npm/test_coverage)
 
 nodeneeds-npm is an out of the box node module which can be used to get started on building a NPM package with all the best practicies. 
 The features supported include:
