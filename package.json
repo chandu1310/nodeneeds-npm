@@ -1,6 +1,6 @@
 {
   "name": "nodeneeds-npm",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Node Needs NPM is a starter repo for building opensource nodejs modules.",
   "repository": {
     "type": "git",
