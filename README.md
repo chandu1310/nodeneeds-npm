@@ -11,8 +11,8 @@ nodeneeds-npm is an out of the box node project which can be used to get started
 
 ## Credits
 [Chandra Shekar Chennamsetty](https://github.com/chandu1310)
-And of course [nodeneeds](https://www.nodeneeds.org) itself is open source with a public repository
-on GitHub.
+
+And of course [nodeneeds](https://www.nodeneeds.org) itself is open source with a public repository on GitHub.
 
 ### Installation
 
