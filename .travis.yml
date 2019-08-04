@@ -1,14 +1,16 @@
 language: node_js
 node_js:
 - '8'
-addons:
-  code_climate:
-    repo_token:
-      secure: sfRzBCN/nPaeTeVhr7xXHzCmL13crjrWerQhtodwTByuxyufn2LLxApdWXjO9aSIvSCacitKMj8VDV++G8UagB/7WdoZ7M7EwRrHKu7Bk1a0ksA6ScInyEGewn5rfLTQ9ovCINTd0B9AuJtZ23CjDqZv/qxroaf+sOWEBiQmHa55BUqGvfNQofH1U0IIRDzMA5QWN7bAMUCLmg78wciYtT2Ht18ykGSt1EzV5MlKyY0bMXuAxcsVRVSJ3qx3K0qxr1dtOY07EldHa/Bmwt2owau0/3zXx9hgQcZshmqM7NhtsUZeUAOtuM0kh2k4I1NybYcUxljKTL+KpohEq+AvFmNTu2nlhDI4FC0IOvApQzesNSDk1e5ZQmFDoMfoHIuPJLOTxxTbFnm3ZY8Xq+CpEmz8z0ueWjw3Fq4IkgAEYf/ALS2sfOgLNBP+otlqIvUg85Yk7FmoJeqYIKU6nh5YRE6OoC728IuCORLGJ0do3piCSqooOAGFIMqRN6Or+jwt+Pt81UQjcWhiKU9/uib27LMW73XZANnvp0LpKFL3UHTf9kvKw3sQ+KVX3fmMgvptl8zP3/k+el19LGSPAEu/zpjYGblt8dA574J2wWxusxa6a/jizc11JYlx3rF1ANeHpMqcX8JN7pN/Ra0vKsNdf3A8gUEg5k8qKsEWm0xX/9U=
-script: ./node_modules/.bin/nyc --reporter=lcov yarn test
+cache:
+  directories:
+  - node_modules
+install:
+- npm install nyc -g
 before_script:
-- npm install -g yarn  
-- npm install codeclimate-test-reporter nyc -g
+- curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+- chmod +x ./cc-test-reporter
+- ./cc-test-reporter before-build
+script:
+- nyc --reporter=lcov npm run test
 after_script:
-- codeclimate-test-reporter < ./coverage/lcov.info
-    
+- ./cc-test-reporter after-build
