@@ -9,6 +9,7 @@
   "engines": {
     "node": ">=0.10.0"
   },
+  "main": "lib/index.js",
   "scripts": {
     "lint": "echo Checking for lint issues && ./node_modules/.bin/eslint --fix ./test ./src",
     "test": "echo Running Tests && ./node_modules/mocha/bin/mocha --require @babel/register --reporter spec",
